@@ -3,7 +3,6 @@ import io
 def parse(mapT):
     line, column, acc = 0, 0, 0
     while line < len(mapT):
-        print(mapT[line][column])
         acc += 1 if mapT[line][column] == '#' else 0
         column += 3 - len(mapT[line]) if (column + 3 >= len(mapT[line])) else 3
         line += 1

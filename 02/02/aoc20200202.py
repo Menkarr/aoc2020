@@ -13,7 +13,7 @@ def countValid(inputL): # inputL est une liste de passwords (un par ligne)
     return acc # on renvoie l'accumulateur
 
 def main():
-    with open("input.txt") as f:
+    with open("../input.txt") as f:
         inputL = [line.rstrip() for line in f] # on acquiert la liste d'inputs
 
     print(countValid(inputL))
